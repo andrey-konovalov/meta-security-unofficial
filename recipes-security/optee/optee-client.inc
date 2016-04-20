@@ -3,8 +3,6 @@ DESCRIPTION = "OPTEE Client"
 
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://${S}/LICENSE;md5=69663ab153298557a59c67a60a743e5b"
-PR="r0"
-PV="1.0+git"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
@@ -12,8 +10,6 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 SRC_URI = "git://github.com/OP-TEE/optee_client.git"
 S = "${WORKDIR}/git"
-
-SRCREV = "0b0d237779de6982451f6f5971b7106e459a2958"
 
 do_compile() {
     mkdir -p ${D}/usr
